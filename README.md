@@ -3,3 +3,10 @@
 # Bruski Beer Inventory Service
 
 Part of a microservice example
+
+# Default Port Mappings - For Single Host
+| Service Name | Port | 
+| --------| -----|
+| [Bruski Beer Service](https://github.com/kwalter26/bruski-beer-service) | 8080 |
+| [Bruski Beer Order Service](https://github.com/kwalter26/bruski-beer-order-service) | 8081 |
+| Bruski Beer Inventory Service | 8082 |
