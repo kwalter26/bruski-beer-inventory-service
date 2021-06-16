@@ -26,4 +26,9 @@ public class BeerInventoryServiceImpl implements BeerInventoryService {
                 .map(beerInventoryMapper::beerInventoryToBeerInventoryDto)
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public BeerInventoryDto createBeerInventory(BeerInventoryDto beerInventoryDto) {
+        return beerInventoryMapper.beerInventoryToBeerInventoryDto(beerInventoryRepository.save(beerInventoryMapper.beerInventoryDtoToBeerInventory(beerInventoryDto)));
+    }
 }
