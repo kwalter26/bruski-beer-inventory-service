@@ -28,7 +28,7 @@ public class NewInventoryListener {
 
         BeerDto beerDto = newInventoryEvent.getBeerDto();
 
-        log.info("New beer inventory" + newInventoryEvent.getBeerDto().getBeerName() + ":" + newInventoryEvent.getBeerDto().getQuantityOnHand() );
+        log.info("New beer inventory" + newInventoryEvent.getBeerDto().getBeerName() + ":" + newInventoryEvent.getBeerDto().getQuantityOnHand());
 
         beerInventoryService.createBeerInventory(BeerInventoryDto.builder()
                 .beerId(beerDto.getId())

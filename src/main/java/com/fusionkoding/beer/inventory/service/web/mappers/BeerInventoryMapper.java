@@ -1,7 +1,7 @@
 package com.fusionkoding.beer.inventory.service.web.mappers;
 
-import com.fusionkoding.beer.inventory.service.web.model.BeerInventoryDto;
 import com.fusionkoding.beer.inventory.service.domain.BeerInventory;
+import com.fusionkoding.beer.inventory.service.web.model.BeerInventoryDto;
 import org.mapstruct.Mapper;
 
 /**

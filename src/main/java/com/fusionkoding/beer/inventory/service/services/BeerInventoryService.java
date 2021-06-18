@@ -7,5 +7,6 @@ import java.util.UUID;
 
 public interface BeerInventoryService {
     List<BeerInventoryDto> getInventoryForBeerId(UUID beerId);
+
     BeerInventoryDto createBeerInventory(BeerInventoryDto beerInventoryDto);
 }
