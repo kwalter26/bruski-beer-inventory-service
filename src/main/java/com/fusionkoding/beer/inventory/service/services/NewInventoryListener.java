@@ -1,9 +1,9 @@
 package com.fusionkoding.beer.inventory.service.services;
 
 import com.fusionkoding.beer.inventory.service.config.JmsConfig;
-import com.fusionkoding.beer.inventory.service.web.model.BeerInventoryDto;
-import com.fusionkoding.brewing.model.BeerDto;
-import com.fusionkoding.brewing.model.NewInventoryEvent;
+import com.fusionkoding.brewery.model.BeerInventoryDto;
+import com.fusionkoding.brewery.model.BeerDto;
+import com.fusionkoding.brewery.model.events.NewInventoryEvent;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jms.annotation.JmsListener;

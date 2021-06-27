@@ -2,7 +2,7 @@ package com.fusionkoding.beer.inventory.service.web.controllers;
 
 import com.fusionkoding.beer.inventory.service.services.BeerInventoryService;
 import com.fusionkoding.beer.inventory.service.web.mappers.BeerInventoryMapper;
-import com.fusionkoding.beer.inventory.service.web.model.BeerInventoryDto;
+import com.fusionkoding.brewery.model.BeerInventoryDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;

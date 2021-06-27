@@ -1,4 +1,4 @@
-package com.fusionkoding.beer.inventory.service.web.model;
+package com.fusionkoding.brewery.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
