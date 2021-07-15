@@ -13,5 +13,6 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
+          distribution: 'adpot'
       - name: Build with Gradle
         run: ./gradlew test
