@@ -2,7 +2,6 @@ package com.fusionkoding.beer.inventory.service.services;
 
 import com.fusionkoding.beer.inventory.service.domain.BeerInventory;
 import com.fusionkoding.beer.inventory.service.repositories.BeerInventoryRepository;
-
 import com.fusionkoding.brewery.model.BeerOrderDto;
 import com.fusionkoding.brewery.model.BeerOrderLineDto;
 import lombok.RequiredArgsConstructor;

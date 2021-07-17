@@ -33,17 +33,13 @@ public class AllocationRequestListener {
             try {
                 boolean allocated = allocationService.allocateOrder(beerOrderDto);
 
-                if (allocated) {
-                    builder.pendingInventory(false);
-                } else {
-                    builder.pendingInventory(true);
-                }
+                builder.pendingInventory(!allocated);
             } catch (Exception e) {
                 log.error("Allocation failed for order: " + allocateBeerOrderRequest.getBeerOrder().getId());
                 builder.allocationError(true);
             }
 
-            jmsTemplate.convertAndSend(JmsConfig.ALLOCATE_ORDER_RESULT_QUEUE,builder.build());
+            jmsTemplate.convertAndSend(JmsConfig.ALLOCATE_ORDER_RESULT_QUEUE, builder.build());
         });
 
 

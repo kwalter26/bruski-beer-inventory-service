@@ -1,6 +1,5 @@
 package com.fusionkoding.brewery.model;
 
-import com.fusionkoding.brewery.model.BeerOrderDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
