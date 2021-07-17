@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bruski-beer-intentory-service-deployment
+  labels:
+    app: nginx
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bruski-beer-intentory-service
+  template:
+    metadata:
+      labels:
+        app: bruski-beer-intentory-service
+    spec:
+      containers:
+        - name: bruski-beer-intentory-service
+          image: kwalter26/bruski-beer-inventory-service
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: bruski-beer-inventory-service-config
